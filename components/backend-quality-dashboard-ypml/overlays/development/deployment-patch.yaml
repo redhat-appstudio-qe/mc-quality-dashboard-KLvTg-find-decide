@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-ypml
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/e2e-demos-cltm-tenant/mc-quality-dashboard/backend-quality-dashboard-ypml@sha256:a2a46042a9fa854ec32343ddcfa40a69e9244dea7ee41f569611e4d193580af2
+        name: container-image
+        resources: {}
+status: {}
